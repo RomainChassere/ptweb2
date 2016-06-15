@@ -30,3 +30,67 @@ div, header, footer, aside, section {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+/* COLORS
+MENU : #729fcf;
+CONTOURS ET TITRES : #64B5F6
+TEXTE SECONDAIRE : #808080; */
+
+/* HEADER */
+.headerpic {
+	height: 100vh;
+	background-image:url(img/header.jpg);
+	background-position: center center;
+}
+
+.name {
+	font-family: Ubuntu;
+}
+
+.undertitle {
+	font-family: Ubuntu;
+}
+
+/* MENU HEADER */
+nav {
+	background-color: #729fcf;
+	text-decoration: none;
+	display: inline;
+}
+
+nav>ul>li {
+	font-family: Raleway;
+	display: inline;
+}
+
+/* TITRE DE CATEGORIES */
+h2 {
+	font-family: Raleway;
+}
+
+/* PRESENTATION */
+
+
+/* COMPETENCES */
+.fa-code {
+	color: #64B5F6;
+}
+.fa-pencil-square-o {
+	color: #64B5F6;
+}
+.fa-language {
+	color: #64B5F6;
+}
+
+/* PORTFOLIO */
+
+/* PARCOURS */
+
+/* FORMULAIRE */
+
+/* INFOS PERSO */

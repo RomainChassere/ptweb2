@@ -2,17 +2,116 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/font-awesome-4.6.1/css/font-awesome.css">
   <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
-  <div class="wrapper">
+    <div class="header">
+    <span class="name"> Romain Chasseré </span>
+    <span class="undertitle"> Développement & Intégration </span>
+    <img src="fleche.png" class="fleche" />
+      <nav>
+        <ul>
+          <li> Présentation </li>
+          <li> Compétences </li>
+          <li> Portfolio </li>
+          <li> Parcours </li>
+          <li> Contact </li>
+        </ul>
+      </nav>
+    </div>
 
+    <div class="présentation">
+      <img src="romain" alt="Ma tête" class="romain" />
+      <p> Bonjour et bienvenue sur mon CV intéractif. Actuellement en première année de DUT MMI
+      et passioné par les nouvelles technologies depuis mon entrée dans ce DUT. Etant curieux et à l'affut de nouveautés, je me tiens toujours informé sur l'actu web. <br> Pour en savoir plus sur moi, contactez-moi grâce à la section <span a href=""> contact </span> </p>
+      <span class="interest"> Mes centres d'intérêts </span>
+      <img src="manette" alt="Manette de jeu" class="imginterest" />
+      <img src="raquette" alt="Raquette de tennis de table" class="imginterest" />
+      <img src="linux" alt="Linuxpinguin" class="imginterest" />
+    </div>
 
-  </div>
+    <hr>
 
+    <div class="compétences">
+      <h2> Compétences </h2>
+      <div class="code">
+        <i class="fa fa-code" aria-hidden="true"></i>
+        <p class="skillstext"> Développement en PHP, MySQL et connaissances basiques de C. HTML5 & CSS3 pour intégrer de façon responsive </p>
+      </div>
+
+      <div class="design">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        <p class="skillstext"> Création de maquettes, affiches et flyers à l'aide de Photoshop et Illustrator </p>
+      </div>
+
+      <div class="language">
+        <i class="fa fa-language" aria-hidden="true"></i>
+        <p class="skillstext"> Allemand bilingue et bon niveau d’anglais (B2) </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="portfolio">
+      <h2> Portfolio </h2>
+      <div class="gallery">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="parcours">
+      <h2> Parcours </h2>
+        <div class="date"> 2015 - 2017 <span class="details"> IUT d'Haguenau </span></div>
+        <div class="date"> 2012 - 2015 <span class="details"> Lycée Robert Schuman d'Haguenau </span></div>
+
+        <span class="etude"> DUT Métiers du Multimédia et de l'Internet </span>
+        <span class="etudedetails"> Développement et intégration web, ergonomie, infographie, audiovisuel,
+          communication et marketing </span>
+
+        <span class="etude"> Baccalauréat ES option math et obtention de l'ABIBAC </span>
+        <span class="etudedetails"> Connaissances des sciences économiques et sociales, culture générale </span>
+    </div>
+
+    <div class="contact">
+      <h2> Contact </h2>
+        <form action="" class="formulaire">
+          <input type="text" class="inputname" placeholder="Votre nom" autocomplete="off"/>
+          <input type="email" class="inputmail" placeholder="Votre Email" autocomplete="off"/>
+          <input type="text" class="inputtext" placeholder="Votre texte" autocomplete="off"/>
+          <input type="submit" value="Envoyer" />
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="infosperso">
+      <div class="mail">
+        <span class="fa fa-envelope" aria-hidden="true"></span>
+        <span class="personnal"> romainchassere@gmail.com </span>
+      </div>
+      <div class="phone">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        <span class="personnal"> 06.31.52.97.82 </span>
+      </div>
+      <div class="facebook">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <span> <a href="https://www.facebook.com/romain.chassere" target="_blank" class="personnal"> Romain Chasseré </a> </span>
+      </div>
+      <div class="twitter">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        <span> <a href="https://twitter.com/Romain_Chsr" target="_blank" class="personnal"> Romain_Chsr </a> </span>
+      </div>
+    </div>
+
+<script src="js/jquery-2.2.3.js"></script>
 </body>
 </html>
