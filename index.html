@@ -11,34 +11,41 @@
 </head>
 
 <body>
-    <div class="header">
-    <span class="name"> Romain Chasseré </span>
-    <span class="undertitle"> Développement & Intégration </span>
-    <img src="fleche.png" class="fleche" />
+      <div class="mainpic">
+        <span class="name"> Romain Chasseré </span>
+        <span class="undertitle"> Développement & Intégration </span>
+        <img src="fleche.png" class="fleche" />
+      </div>
+
       <nav>
         <ul>
-          <li> Présentation </li>
-          <li> Compétences </li>
-          <li> Portfolio </li>
-          <li> Parcours </li>
-          <li> Contact </li>
+          <li> <a href="#presentation_id" id="mainmenu"> Présentation </a> </li>
+          <li> <a href="#competences_id" id="mainmenu">Compétences</a>  </li>
+          <li> <a href="#portfolio_id" id="mainmenu">Portfolio </a> </li>
+          <li> <a href="#parcours_id" id="mainmenu">Parcours </a> </li>
+          <li> <a href="#contact_id" id="mainmenu">Contact </a> </li>
         </ul>
       </nav>
-    </div>
 
-    <div class="présentation">
-      <img src="romain" alt="Ma tête" class="romain" />
-      <p> Bonjour et bienvenue sur mon CV intéractif. Actuellement en première année de DUT MMI
-      et passioné par les nouvelles technologies depuis mon entrée dans ce DUT. Etant curieux et à l'affut de nouveautés, je me tiens toujours informé sur l'actu web. <br> Pour en savoir plus sur moi, contactez-moi grâce à la section <span a href=""> contact </span> </p>
-      <span class="interest"> Mes centres d'intérêts </span>
-      <img src="manette" alt="Manette de jeu" class="imginterest" />
-      <img src="raquette" alt="Raquette de tennis de table" class="imginterest" />
-      <img src="linux" alt="Linuxpinguin" class="imginterest" />
+     <div class="presentation" id="presentation_id">
+      <div class="picture">
+        <img src="img/goat.jpg" alt="Ma tête" class="romain" />
+      </div>
+
+      <div class="descrip"> Bonjour et bienvenue sur mon CV intéractif ! Actuellement en première année de DUT MMI
+      et passioné par les nouvelles technologies depuis plusieurs années. Etant curieux et à l'affut de nouveautés, je me tiens toujours informé sur l'actu web. <br> Pour en savoir plus sur moi, n'hésitez pas à me contacter grâce à la section <span> <a href="#competences_id"> contact </a> </span> </div>
+
+      <div class="centreinteret">
+        <span class="interest"> Mes centres d'intérêts </span> <br>
+        <img src="img/manette.jpg" alt="Manette de jeu" class="imginterest" />
+        <img src="img/raquette.png" alt="Raquette de tennis de table" class="imginterest" />
+        <img src="img/linux.png" alt="Linuxpinguin" class="imginterest" />
+      </div>
     </div>
 
     <hr>
 
-    <div class="compétences">
+    <div class="competences" id="competences_id">
       <h2> Compétences </h2>
       <div class="code">
         <i class="fa fa-code" aria-hidden="true"></i>
@@ -58,7 +65,7 @@
 
     <hr>
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio_id">
       <h2> Portfolio </h2>
       <div class="gallery">
         <img src="" alt="">
@@ -68,30 +75,31 @@
 
     <hr>
 
-    <div class="parcours">
+    <div class="parcours" id="parcours_id">
       <h2> Parcours </h2>
-        <div class="date"> 2015 - 2017 <span class="details"> IUT d'Haguenau </span></div>
-        <div class="date"> 2012 - 2015 <span class="details"> Lycée Robert Schuman d'Haguenau </span></div>
+        <div class="date"> <span class="duree"> 2015 - 2017  </span> <br><span class="details_lycee"> IUT d'Haguenau </span><br>
+        <span class="duree"> 2012 - 2015  </span> <br><span class="details_lycee"> Lycée Robert Schuman de Haguenau </span> </div>
 
-        <span class="etude"> DUT Métiers du Multimédia et de l'Internet </span>
-        <span class="etudedetails"> Développement et intégration web, ergonomie, infographie, audiovisuel,
-          communication et marketing </span>
+      <div class="div_etudes">
+        <span class="etude"> DUT Métiers du Multimédia et de l'Internet </span><br>
+        <span class="details"> Développement et intégration web, ergonomie, infographie, audiovisuel,
+          communication et marketing </span><br>
 
-        <span class="etude"> Baccalauréat ES option math et obtention de l'ABIBAC </span>
-        <span class="etudedetails"> Connaissances des sciences économiques et sociales, culture générale </span>
-    </div>
-
-    <div class="contact">
-      <h2> Contact </h2>
-        <form action="" class="formulaire">
-          <input type="text" class="inputname" placeholder="Votre nom" autocomplete="off"/>
-          <input type="email" class="inputmail" placeholder="Votre Email" autocomplete="off"/>
-          <input type="text" class="inputtext" placeholder="Votre texte" autocomplete="off"/>
-          <input type="submit" value="Envoyer" />
-        </form>
+        <span class="etude"> Baccalauréat ES option math et obtention de l'ABIBAC </span><br>
+        <span class="details"> Connaissances des sciences économiques et sociales, culture générale </span> </div>
     </div>
 
     <hr>
+
+  <div class="formulaire">
+    <h2> Contact </h2>
+  <form>
+    <input name="name" type="text" class="feedback-input" placeholder="Nom" />
+    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+    <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+    <input type="submit" value="SUBMIT"/>
+  </form>
+  </div>
 
     <div class="infosperso">
       <div class="mail">
@@ -102,16 +110,12 @@
         <i class="fa fa-mobile" aria-hidden="true"></i>
         <span class="personnal"> 06.31.52.97.82 </span>
       </div>
-      <div class="facebook">
-        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        <span> <a href="https://www.facebook.com/romain.chassere" target="_blank" class="personnal"> Romain Chasseré </a> </span>
-      </div>
       <div class="twitter">
         <i class="fa fa-twitter-square" aria-hidden="true"></i>
         <span> <a href="https://twitter.com/Romain_Chsr" target="_blank" class="personnal"> Romain_Chsr </a> </span>
       </div>
     </div>
 
-<script src="js/jquery-2.2.3.js"></script>
+<script src="js/form.js"> </script>
 </body>
 </html>
