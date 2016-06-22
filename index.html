@@ -14,12 +14,11 @@
       <div class="mainpic">
         <span class="name"> Romain Chasseré </span>
         <span class="undertitle"> Développement & Intégration </span>
-        <img src="fleche.png" class="fleche" />
+        <a href="#navigation"><img src="img/Arrow.png" class="animated bounce fleche scroll-down" address="true"/> </a>
       </div>
 
-      <nav>
+      <nav id="navigation" class="header_nav">
         <ul>
-          <li> <a href="#presentation_id" id="mainmenu"> Présentation </a> </li>
           <li> <a href="#competences_id" id="mainmenu">Compétences</a>  </li>
           <li> <a href="#portfolio_id" id="mainmenu">Portfolio </a> </li>
           <li> <a href="#parcours_id" id="mainmenu">Parcours </a> </li>
@@ -33,7 +32,7 @@
       </div>
 
       <div class="descrip"> Bonjour et bienvenue sur mon CV intéractif ! Actuellement en première année de DUT MMI
-      et passioné par les nouvelles technologies depuis plusieurs années. Etant curieux et à l'affut de nouveautés, je me tiens toujours informé sur l'actu web. <br> Pour en savoir plus sur moi, n'hésitez pas à me contacter grâce à la section <span> <a href="#competences_id"> contact </a> </span> </div>
+      et passioné par les nouvelles technologies depuis plusieurs années. Etant curieux et à l'affut de nouveautés, je me tiens toujours informé sur l'actu web. <br> Pour en savoir plus sur moi, n'hésitez pas à me contacter grâce à la section <span> <a href="#contact_id"> contact </a> </span> </div>
 
       <div class="centreinteret">
         <span class="interest"> Mes centres d'intérêts </span> <br>
@@ -43,9 +42,9 @@
       </div>
     </div>
 
-    <hr>
+    <hr id="competences_id" />
 
-    <div class="competences" id="competences_id">
+    <div class="competences">
       <h2> Compétences </h2>
       <div class="code">
         <i class="fa fa-code" aria-hidden="true"></i>
@@ -63,19 +62,50 @@
       </div>
     </div>
 
-    <hr>
+    <hr id="portfolio_id" />
 
-    <div class="portfolio" id="portfolio_id">
+    <div class="portfolio">
       <h2> Portfolio </h2>
-      <div class="gallery">
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
+      <div class="thumbnail-grid flex">
+        <a href="img/portfolio/bulles.png" target="_blank" class="flex-item">
+    <figure class="i1">
+      <figcaption> Création de bulles sur Photoshop</figcaption>
+    </figure>
+      </a>
+    <a href="img/portfolio/appliphp.jpg" target="_blank" class="flex-item">
+    <figure class="i2">
+      <figcaption> Application PHP de gestion d'une bibliothèque </figcaption>
+    </figure>
+    </a>
+    <a href="img/portfolio/Fiction.mp4"class="flex-item">
+    <figure class="i3">
+      <figcaption>Mini-fiction</figcaption>
+    </figure>
+    </a>
     </div>
 
-    <hr>
+    <div class="thumbnail-grid flex">
+      <a href="img/portfolio/bulles.png" target="_blank" class="flex-item">
+  <figure class="i4">
+    <figcaption> Création d'un logo fictif pour un FabLab </figcaption>
+  </figure>
+    </a>
+  <a href="img/portfolio/logo.png" target="_blank" class="flex-item">
+  <figure class="i5">
+    <figcaption> Pictogrammes réalisés sur Illustrator </figcaption>
+  </figure>
+  </a>
+  <a href="https://goerlitzmade.com/en/" target="_blank" class="flex-item">
+  <figure class="i6">
+    <figcaption>Pictogrammes pour une application mobile</figcaption>
+  </figure>
+  </a>
+  </div>
+  </div>
 
-    <div class="parcours" id="parcours_id">
+    <hr id="parcours_id" />
+
+    <div class="parcours">
       <h2> Parcours </h2>
         <div class="date"> <span class="duree"> 2015 - 2017  </span> <br><span class="details_lycee"> IUT d'Haguenau </span><br>
         <span class="duree"> 2012 - 2015  </span> <br><span class="details_lycee"> Lycée Robert Schuman de Haguenau </span> </div>
@@ -89,17 +119,16 @@
         <span class="details"> Connaissances des sciences économiques et sociales, culture générale </span> </div>
     </div>
 
-    <hr>
+    <hr id="contact_id" />
 
   <div class="formulaire">
     <h2> Contact </h2>
   <form>
-    <input name="name" type="text" class="feedback-input" placeholder="Nom" />
-    <input name="email" type="text" class="feedback-input" placeholder="Email" />
-    <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-    <input type="submit" value="SUBMIT"/>
+    <input name="name" type="text" class="feedback-input" placeholder="Nom"  autocomplete="off"/>
+    <input name="email" type="email" class="feedback-input" placeholder="Email" autocomplete="off" />
+    <textarea name="text" class="feedback-input" placeholder="Votre message..."></textarea>
+    <input type="submit" value="Envoyer"/>
   </form>
-  </div>
 
     <div class="infosperso">
       <div class="mail">
@@ -108,14 +137,29 @@
       </div>
       <div class="phone">
         <i class="fa fa-mobile" aria-hidden="true"></i>
-        <span class="personnal"> 06.31.52.97.82 </span>
+        <span class="personnal"> &nbsp;06.31.52.97.82 </span>
       </div>
       <div class="twitter">
         <i class="fa fa-twitter-square" aria-hidden="true"></i>
-        <span> <a href="https://twitter.com/Romain_Chsr" target="_blank" class="personnal"> Romain_Chsr </a> </span>
+        <span> <a href="https://twitter.com/Romain_Chsr" target="_blank" class="personnal"> &nbsp;Romain_Chsr </a> </span>
       </div>
+      <div class="dlcv"> <a class="btn btn-primary btn-lg active" href="downloads/CV_Romain_CHASSERE.pdf" target="_blank" role="button"> Téléchargez mon CV  </a>
+     </div>
+      <div class="dlcv">
+        <div class="dlcv"> <a class="btn btn-primary btn-lg active" href="downloads/Lebenslauf_CHASSERE.pdf" target="_blank" role="button"> Mein Lebenslauf laden </a>
+       </div>
+     </div>
     </div>
+  </div>
 
-<script src="js/form.js"> </script>
+  <footer>
+    <p id="rights"> All rights reserved &copy; | Romain Chasseré | 2016 </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="js/main.js"></script>
+
+</script>
+
 </body>
 </html>
