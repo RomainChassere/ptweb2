@@ -109,8 +109,8 @@ div::after {
 	position: absolute;
 	/* Préparation de notre animation */
 	opacity: 0;
-	transform: translateY(5px);
-	transition: all .4s;
+	transform: translateY(4px);
+	transition: all .5s;
 }
 /* Le trait va remonter et apparaitre */
 .header_nav a:hover:after,
@@ -127,6 +127,15 @@ nav {
 	text-decoration: none;
 	height: 50px;
 	z-index: 100;
+}
+
+.menuhover {
+	background-color: #BBDEFB;
+	display: none;
+}
+
+.menuhover:hover {
+	display: block;
 }
 
 ul {
@@ -194,21 +203,12 @@ li {
 .fa {
 	transform: scale(2.2, 2.2);
 }
-.fa-code {
+.fa-code, .fa-pencil-square-o, .fa-language {
 	color: #729fcf;
 	margin-left: 115px;
 	padding-bottom: 18px;
 }
-.fa-pencil-square-o {
-	color: #729fcf;
-	margin-left: 115px;
-	padding-bottom: 18px;
-}
-.fa-language {
-	color: #729fcf;
-	margin-left: 115px;
-	padding-bottom: 18px;
-}
+
 
 .competences {
 	margin-top: 53px;
@@ -225,7 +225,7 @@ li {
 	font-size: 20px;
 }
 
-.design {
+.design, .language {
 	margin-left: 80px;
 	float: left;
 	width: 250px;
@@ -234,14 +234,6 @@ li {
 	font-size: 20px;
 }
 
-.language {
-	margin-left: 80px;
-	float: left;
-	width: 250px;
-	margin-top: 40px;
-	text-align: justify;
-	font-size: 20px;
-}
 
 /* PORTFOLIO */
 .portfolio {
@@ -425,8 +417,8 @@ textarea {
 	margin-top: 3.8%;
 }
 
-.phone, .twitter, .dlcv {
-	margin-top: 40px;
+.phone, .twitter, .github, .dlcv {
+	margin-top: 35px;
 }
 
 .personnal {
@@ -441,8 +433,13 @@ textarea {
 }
 
 .dlcv {
-	margin-top: 20px;
+	margin-left: -7px;
+	margin-top: 43px;
 	text-decoration: none;
+}
+
+div.dlcv>a {
+	margin-top: 10px;
 }
 
 /* FOOTER  */
