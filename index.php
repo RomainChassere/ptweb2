@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:description" content="Romain Chasseré - CV interactif" />
+  <meta property="og:name" content="Romain Chasseré" />
+  <!--   <meta property="og:url" content="http://www.romainchassere.fr" />
+  <meta property="og:image" content="img/..." /> -->
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/font-awesome-4.6.1/css/font-awesome.css">
-  <link rel="stylesheet" href="css/animate.css">
+
+
+  <link href="img/favicon.png" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/font-awesome-4.6.1/css/font-awesome.css" />
+  <link rel="stylesheet" href="css/animate.css" />
 </head>
 
 <body>
       <div class="mainpic">
         <span class="name"> Romain Chasseré </span>
         <span class="undertitle"> Développement & Intégration </span>
-        <a href="#navigation"><img src="img/Arrow.png" class="animated infinite bounce fleche scroll-down" address="true"/> </a>
+        <a href="#navigation" id="fleche_anim"><img src="img/Arrow.png" class="animated infinite fadeInDown fleche scroll-down" address="true"/> </a>
       </div>
+
+<div class="wrapper">
 
       <nav id="navigation" class="header_nav">
         <ul>
-          <li> <a href="#competences_id" id="mainmenu">Compétences</a> </li>
+          <li> <a href="#competences_id" id="mainmenu"> Compétences</a> </li>
           <li> <a href="#portfolio_id" id="mainmenu">Portfolio </a> </li>
           <li> <a href="#parcours_id" id="mainmenu">Parcours </a> </li>
           <li> <a href="#contact_id" id="mainmenu">Contact </a> </li>
@@ -32,7 +41,7 @@
       </div>
 
       <div class="descrip"> Bonjour et bienvenue sur mon CV intéractif ! Actuellement en première année de DUT MMI
-      et passioné par les nouvelles technologies depuis plusieurs années. Etant curieux et à l'affut de nouveautés, je me tiens toujours informé sur l'actu web. <br> Pour en savoir plus sur moi, n'hésitez pas à me contacter grâce à la section <span> <a href="#contact_id"> contact </a> </span> </div>
+      et passioné par les nouvelles technologies depuis plusieurs années. Etant curieux et à l'affût de nouveautés, je me tiens toujours informé sur l'actu web. <br> Pour en savoir plus sur moi, n'hésitez pas à me contacter grâce à la section <span> <a href="#contact_id"> contact </a> </span> </div>
 
       <div class="centreinteret">
         <span class="interest"> Mes centres d'intérêts </span> <br>
@@ -108,7 +117,7 @@
     <div class="parcours">
       <h2> Parcours </h2>
         <div class="date"> <span class="duree"> 2015 - 2017  </span> <br><span class="details_lycee"> IUT de Haguenau </span><br>
-        <span class="duree"> 2012 - 2015  </span> <br><span class="details_lycee"> Lycée Robert Schuman de Haguenau </span> </div>
+        <span class="duree" id="duree_responsive"> 2012 - 2015  </span> <br><span class="details_lycee"> Lycée Robert Schuman de Haguenau </span> </div>
 
       <div class="div_etudes">
         <span class="etude"> DUT Métiers du Multimédia et de l'Internet </span><br>
@@ -148,14 +157,16 @@
         <i class="fa fa-github-square" aria-hidden="true"></i>
         <span> <a href="https://github.com/RomainChassere" target="_blank" class="personnal"> &nbsp;RomainChassere </a> </span>
       </div>
-      <div class="dlcv"> <a class="btn btn-primary btn-lg active" href="downloads/CV_Romain_CHASSERE.pdf" target="_blank" role="button"> Téléchargez mon CV  </a>
+    </div>
+      <div class="dlcv"> <a class="btn btn-primary btn-lg active" href="downloads/CV_Romain_CHASSERE.pdf" target="_blank" role="button"> Téléchargez mon CV </a>
 
        <a class="btn btn-primary btn-lg active" href="downloads/Lebenslauf_CHASSERE.pdf" target="_blank" role="button"> Mein Lebenslauf laden </a>
       </div>
-     </div>
+
     </div>
-    <?php
-      // INIT VAR
+   </div>
+
+      <!-- INIT VAR OUVRE BALISES
       $name = isset($_POST['name']) ? $_POST['name'] : NULL;
       $email = isset($_POST['email']) ? $_POST['email'] : NULL;
       $message = isset($_POST['message']) ? $_POST['message'] : NULL; // CONTENU DU MESSAGE
@@ -171,11 +182,11 @@
     } else {
         echo '<p>Something went wrong, go back and try again!</p>';
     }
-}
-     ?>
+} FERME BALISE -->
+
 
   <footer>
-    <p id="rights"> All rights reserved &copy; | Romain Chasseré | 2016 </p>
+    <p id="rights"> Romain Chasseré &copy; | 2016 &nbsp; &nbsp; &nbsp; Header picture: AxiomDesign  </p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>

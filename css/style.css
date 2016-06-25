@@ -35,6 +35,7 @@ div, header, footer, aside, section {
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 /* COLORS
 MENU : #729fcf;
@@ -46,6 +47,23 @@ TEXTE SECONDAIRE : #808080; */
 html {
 	scroll-behavior: smooth;
 }
+
+.wrapper {
+	width: 100%;
+}
+
+@media (max-width: 800px) {
+	.wrapper {
+		width: 767px;
+	}
+	.html {
+		background-color: black !important;
+	}
+	hr {
+		width: 640px !important;
+	}
+}
+
 hr {
 	border-top: 0.2px solid #BBDEFB !important;
 	width: 1200px;
@@ -95,6 +113,18 @@ div::after {
 	display: block;
 	margin: auto;
 	margin-top: 55px;
+}
+
+@media (max-width: 800px) {
+	.name {
+
+	}
+	.undertitle {
+		margin-top: 100px;
+	}
+	.fleche {
+		margin-top: 60px;
+	}
 }
 
 /*sticky*/
@@ -186,6 +216,7 @@ li {
 	width: 300px;
 	float: left;
 	margin-left: 100px;
+	margin-top: -2px;
 }
 
 .interest {
@@ -197,6 +228,31 @@ li {
 	margin-left: 11px;
 }
 
+@media (max-width: 800px) {
+	.picture {
+		width: 542px;
+	}
+	.romain {
+		display: block;
+		margin: 0 auto;
+	}
+	.descrip {
+		text-align: justify;
+		margin-top: 32px;
+		margin-left: 50px;
+		font-size: 21px;
+	}
+	.centreinteret {
+		margin-top: 42px;
+		margin-left: 148px;
+	}
+	.interest {
+		font-size: 22px !important;
+	}
+	.imginterest {
+		margin-left: 17px;
+	}
+}
 
 
 /* COMPETENCES */
@@ -234,6 +290,21 @@ li {
 	font-size: 20px;
 }
 
+@media (max-width: 800px) {
+	.code, .design, .language {
+		font-size: 16px;
+		width: 160px;
+		text-align: center;
+	}
+	.code {
+		margin-left: 60px;
+	}
+	.fa-code, .fa-pencil-square-o, .fa-language {
+		color: #729fcf;
+		margin-left: 5px;
+		padding-bottom: 18px;
+	}
+}
 
 /* PORTFOLIO */
 .portfolio {
@@ -242,13 +313,12 @@ li {
 }
 
 .thumbnail-grid {
-	user-select: none
+	user-select: none;
 }
 .thumbnail-grid figure {
 	position: relative;
 	width: 300px;
 	height: 200px;
-	margin: 10px;
 	border-radius: 3px;
 	box-shadow: inset 0 -40px 0 0 rgba(0,0,0,.4);
 	transition: all .2s ease-in-out
@@ -310,6 +380,34 @@ li {
 	background-size: cover
 }
 
+@media (max-width: 800px) {
+	.thumbnail-grid figure.i1 {
+	 margin-left: 10px;
+	 background: url(../img/portfolio/bulles.png) no-repeat center;
+	 background-size: cover
+	}
+	.thumbnail-grid figure.i3 {
+		float: left;
+		margin-top: 30px;
+		margin-left: -90px;
+		background: url(../img/portfolio/miniaturefilm.JPG) no-repeat center;
+		background-size: cover
+	}
+	.thumbnail-grid figure.i5 {
+		float: right;
+		margin-left: -90px;
+		margin-top: -240px;
+		background: url(../img/portfolio/pictosbureau.jpg) no-repeat center;
+		background-size: cover
+	}
+	.thumbnail-grid figure.i4 {
+		margin-top: 30px;
+		margin-left: -22px;
+		background: url(../img/portfolio/logo.png) no-repeat center;
+		background-size: cover
+	}
+}
+
 /* PARCOURS */
 .parcours {
 	margin-top: 60px;
@@ -324,6 +422,28 @@ li {
 	margin-top: 40px;
 	text-align: center;
 }
+/* .border {
+	border: 1px solid #BBDEFB;
+	border-radius: 3px;
+}*/
+
+@media (max-width: 800px) {
+	.date {
+		margin-left: 80px;
+		font-size: 12px;
+		float: left;
+	}
+	.details_lycee {
+		width: 130px;
+	}
+	.div_etudes {
+		margin-left: 130px !important;
+		width: 360px !important;
+	}
+	#duree_responsive {
+		padding-top: 75px;
+	}
+}
 
 .duree {
 	display: block;
@@ -335,7 +455,7 @@ li {
 	color: #808080;
 	text-align: center;
 	margin-top: -18px;
-	padding-bottom: 19%;
+	padding-bottom: 19.5%;
 }
 
 .details {
@@ -362,7 +482,7 @@ li {
 	margin-top: 60px;
 }
 form {
-	float: left;
+	 float: left;
 	 max-width:420px;
 	 margin:50px auto;
 	 margin-left: 16.5%;
@@ -417,6 +537,7 @@ textarea {
 	margin-top: 3.8%;
 }
 
+
 .phone, .twitter, .github, .dlcv {
 	margin-top: 35px;
 }
@@ -433,13 +554,38 @@ textarea {
 }
 
 .dlcv {
-	margin-left: -7px;
+	display: block;
+	width: 300px;
+	text-align: center;
+	float: left;
+	margin-left: 55px;
 	margin-top: 43px;
 	text-decoration: none;
 }
 
+@media (max-width: 800px)
+{
+	form {
+		display: block;
+		width: 480px;
+		margin-left: 170px;
+	}
+	.infosperso {
+		margin-left: 110px !important;
+		padding-bottom: 40px;
+	}
+	.dlcv {
+		float: left;
+		width: 300px;
+		margin-top: 70px !important;
+		display: block;
+		text-align: center;
+		margin-left: auto;
+	}
+}
 div.dlcv>a {
 	margin-top: 10px;
+	font-family: Ubuntu;
 }
 
 /* FOOTER  */

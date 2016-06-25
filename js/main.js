@@ -8,6 +8,7 @@ $('a[href^="#"]').click(function(){
 	return false;
     });
 
+// STICKY MENU
     $( document ).ready(function() {
       var secondaryNav = $('.header_nav'),
       	secondaryNavTopPosition = secondaryNav.offset().top;
@@ -30,3 +31,8 @@ $('a[href^="#"]').click(function(){
         });
 
     });
+
+// ANNULATION DE l'ANIM DE LA FLECHE APRES CLIQUE
+$("#fleche_anim").click(function(){
+    $("#fleche_anim img").removeClass("animated");
+});
