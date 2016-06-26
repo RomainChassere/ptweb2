@@ -37,7 +37,7 @@
 
      <div class="presentation" id="presentation_id">
       <div class="picture">
-        <img src="img/goat.jpg" alt="Ma tête" class="romain" />
+        <img src="img/romain.png" alt="Ma tête" class="romain" />
       </div>
 
       <div class="descrip"> Bonjour et bienvenue sur mon CV intéractif ! Actuellement en première année de DUT MMI
@@ -147,7 +147,7 @@
       </div>
       <div class="phone">
         <i class="fa fa-mobile" aria-hidden="true"></i>
-        <span class="personnal"> &nbsp;06.31.52.97.82 </span>
+        <span class="personnal"> &nbsp;+33 6.31.52.97.82 </span>
       </div>
       <div class="twitter">
         <i class="fa fa-twitter-square" aria-hidden="true"></i>
@@ -166,7 +166,7 @@
     </div>
    </div>
 
-      <!-- INIT VAR OUVRE BALISES
+      <?php //INIT VAR
       $name = isset($_POST['name']) ? $_POST['name'] : NULL;
       $email = isset($_POST['email']) ? $_POST['email'] : NULL;
       $message = isset($_POST['message']) ? $_POST['message'] : NULL; // CONTENU DU MESSAGE
@@ -178,11 +178,15 @@
   if ($name && $email && $message)
     if ($_POST['submit']) {
       if (mail ($to, $subject, $message)) {
-        echo '<p> Votre message a bien été envoyé. Merci ! </p>';
+        echo "<script>";
+     		echo "alert('Votre message a bien été envoyé. Merci !');";
+     		echo "</script>";
     } else {
-        echo '<p>Something went wrong, go back and try again!</p>';
+        echo "<script>";
+        echo "alert('Une erreur est survenue. Veuillez réessayer !');";
+        echo "</script>";
     }
-} FERME BALISE -->
+} ?>
 
 
   <footer>
